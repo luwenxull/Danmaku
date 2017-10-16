@@ -1,16 +1,27 @@
 {
   "name": "Danmaku",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "https://github.com/luwenxull/Danmaku",
   "author": "luwenxull <992273307@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "npm run tslint:fix && npm run tsc",
+    "tsc": "./node_modules/.bin/tsc",
+    "watch": "./node_modules/.bin/webpack --progress --profile --colors -w",
+    "start": "./node_modules/.bin/webpack-dev-server --open",
+    "tslint": "./node_modules/.bin/tslint ./src",
+    "tslint:fix": "./node_modules/.bin/tslint --fix ./src"
+  },
   "dependencies": {
     "color-text": "^1.4.1",
+    "d3-random": "^1.1.0",
     "d3-selection": "^1.1.0",
     "d3-transition": "^1.1.0"
   },
   "devDependencies": {
+    "@types/d3-ease": "^1.0.7",
+    "@types/d3-random": "^1.1.0",
     "@types/d3-selection": "^1.1.0",
     "@types/d3-transition": "^1.1.0",
     "clean-webpack-plugin": "^0.1.17",

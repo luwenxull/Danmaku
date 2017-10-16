@@ -14,7 +14,7 @@ module.exports = function(env) {
     plugins: [
       new CleanWebpackPlugin(['dist']),
       new HtmlWebpackPlugin({
-        title: 'galaxy',
+        title: 'Danmaku',
         template: 'template/index.ejs',
       }),
       new webpack.HotModuleReplacementPlugin(),

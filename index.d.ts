@@ -1,0 +1,1 @@
+export { Danmaku, IDanmaku } from './build/Danmaku'
