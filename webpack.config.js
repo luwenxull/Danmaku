@@ -31,6 +31,10 @@ module.exports = function(env) {
           use: ['ts-loader'],
           exclude: /node_modules/,
         },
+        {
+          test: /\.styl$/,
+          loader: 'style-loader!css-loader!stylus-loader',
+        },
       ],
     },
     resolve: {
