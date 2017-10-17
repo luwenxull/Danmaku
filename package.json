@@ -1,6 +1,6 @@
 {
-  "name": "Danmaku",
-  "version": "0.1.0",
+  "name": "@luwenxull/danmaku",
+  "version": "0.1.1",
   "main": "index.js",
   "repository": "https://github.com/luwenxull/Danmaku",
   "author": "luwenxull <992273307@qq.com>",
